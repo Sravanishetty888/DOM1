@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="styles.css">
+  <script>
+        
+  </script>
+
+</head>
+<body>
+    <div class="card">
+        <img class="card-img" src=<a data-ved="0CBYQjRxqFwoTCIiNnPGh6IsDFQAAAAAdAAAAABAJ" rel="noopener" target="_blank" href="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fwww.india.com%2Ftopic%2Fsamantha-ruth-prabhu------%2Fpage%2F5%2F&amp;psig=AOvVaw1tXP3N_1WZhvm3msTrAZvD&amp;ust=1740897253977000&amp;source=images&amp;cd=vfe&amp;opi=89978449&amp;ved=0CBYQjRxqFwoTCIiNnPGh6IsDFQAAAAAdAAAAABAJ" jsaction="focus:trigger.HTIQtd;mousedown:trigger.HTIQtd;touchstart:trigger.HTIQtd;;" class="YsLeY" role="link" tabindex="0" aria-label="Visit Samantha Ruth Prabhu : Latest News, Videos and Photos on Samantha Ruth  Prabhu - India.Com News" rlhc="1"><img src="https://s3.india.com/wp-content/uploads/2022/11/samantha-prabhu.jpeg" jsaction="" class="sFlh5c FyHeAf iPVvYb" style="max-width: 1200px; height: 234px; margin: 0px; width: 351px;" alt="Samantha Ruth Prabhu : Latest News, Videos and Photos on Samantha Ruth  Prabhu - India.Com News" jsname="kn3ccd" aria-hidden="false"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTufXnbOfphtee5T0FLzkSpbC-0Agy0XAgHlsFXtY6wKxJxv9ZhwoXPRLC0JkENY2okBJA&amp;usqp=CAU" class="sFlh5c FyHeAf" alt="Samantha Ruth Prabhu : Latest News, Videos and Photos on Samantha Ruth  Prabhu - India.Com News" jsname="JuXqh" style="max-width: 1200px; width: 414px; height: 276px; margin: 0px; position: absolute; visibility: hidden;" data-ilt="1740810896634"><span class="UWuvyf"></span></a>
+        <h5>Stranger</h5>
+        <div id="btn-container">
+            <button id="remove">Unfriend</button>
+            <button id="add">Add Friend</button>
+        </div> 
+    </div>
+
+    <script>
+        var stat = document.querySelector("h5"); // Select using ID for better accuracy
+        var addFriend = document.querySelector("#add");
+        var unFriend = document.querySelector("#remove");
+
+        addFriend.addEventListener("click", function(){
+            stat.innerHTML = "Friends";
+            stat.style.color = "green";
+        });
+
+        unFriend.addEventListener("click", function(){
+            stat.innerHTML = "Stranger";
+            stat.style.color = "red";
+        });
+    </script>
+
+    <!-- <script src="./solution.js" onclick=""></script> -->
+</body>
+</html>
